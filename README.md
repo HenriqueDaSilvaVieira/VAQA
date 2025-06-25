@@ -87,7 +87,6 @@ git clone https://github.com/HenriqueDaSilvaVieira/VAQA.git
 cd VAQA
 pip install -r requirements.txt
 
-```bash
 python3 vaqa.py -i ./caminho_para_arquivos_fastq -o ./resultados
 
 
