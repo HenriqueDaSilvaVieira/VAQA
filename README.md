@@ -10,7 +10,7 @@
 
 💡 O V.A.Q.A realizes:
 - The assembly of multiple genomes with **Unicycler**;
-- Quality assessment with **QUAST;
+- Quality assessment with **QUAST**;
 - The generation of graphs with the main **assembly quality metrics**.
 
 ---
