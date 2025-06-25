@@ -1,86 +1,86 @@
 # V.A.Q.A: Visualization, Assembly, Quality, Automated
 
-**V.A.Q.A** é um pipeline totalmente automatizado desenvolvido para simplificar o processo de montagem genômica e avaliação da qualidade a partir de arquivos FASTQ pareados — com apenas **uma linha de comando**.
+**V.A.Q.A** is a fully automated pipeline designed to simplify the process of genomic assembly and quality assessment from paired FASTQ files - with just **one command line**.
 
-💡 O V.A.Q.A realiza:
-- A montagem de múltiplos genomas com o **Unicycler**
-- A avaliação da qualidade com **QUAST**
-- A geração de gráficos com as principais **métricas de qualidade da montagem**
-
----
-
-## 🧬 Aplicação
-
-Inicialmente pensado para apoiar investigações genômicas de **patógenos em surtos clínicos** no contexto de **hospitais veterinários**, o V.A.Q.A também é aplicável a **qualquer projeto genômico** que envolva múltiplas amostras e exija um fluxo de trabalho reprodutível e escalável.
+💡 O V.A.Q.A realizes:
+- The assembly of multiple genomes with **Unicycler**;
+- Quality assessment with **QUAST;
+- The generation of graphs with the main **assembly quality metrics**.
 
 ---
 
-## 🚀 Funcionalidades
+## 🧬 Application
 
-- 🔁 Processamento automatizado de múltiplas amostras com arquivos FASTQ pareados  
-- Montagem de genomas com **Unicycler (SPAdes)**  
-- Avaliação da qualidade com **QUAST**  
-- Visualização gráfica das principais métricas:
-  - Número de contigs
-  - Tamanho total do genoma
-  - N50 e L50
-  - Conteúdo GC  
-- Organização automática dos resultados em pastas por amostra  
+Initially designed to support genomic investigations of **pathogens in clinical outbreaks** in the context of **veterinary hospitals**, V.A.Q.A is also applicable to **any genomic project** involving multiple samples and requiring a reproducible and scalable workflow.
 
 ---
 
-## 📂 Entrada esperada
+## 🚀 Features
 
-Um diretório contendo os arquivos de leitura pareados nos formatos `.fastq`, `.fq` ou `.gz`.
+- 🔁 Automated processing of multiple samples with paired FASTQ files  
+- Genome assembly with **Unicycler (SPAdes)**  
+- Quality assessment with **QUAST**  
+- Graphical visualization of the main metrics:
+  - Number of contigs;
+  - Total genome size;
+  - N50 and L50;
+  - GC Content.
+- Automatic organization of results in folders by sample  
 
-📌 Os arquivos devem seguir a seguinte convenção de nomes, com o mesmo identificador base e sufixos `_R1` e `_R2` indicando os pares:
+---
 
-IDENTIFICADOR_R1.fastq IDENTIFICADOR_R2.fastq
+## 📂 Expected entry
 
-### Exemplo:
+A directory containing the paired read files in `.fastq`, `.fq` or `.gz` format.
+
+📌 Files must follow the following naming convention, with the same base identifier and suffixes `_R1` and `_R2` indicating the pairs:
+
+IDENTIFIER_R1.fastq IDENTIFIER_R2.fastq
+
+### Example:
 
 VSF3096_R1.fastq VSF3096_R2.fastq
 
 VSF3099_R1.fastq VSF3099_R2.fastq
 
-## 📤 Saídas geradas
+## 📤 Outputs generated
 
-Para **cada amostra**, o V.A.Q.A produz automaticamente:
+For **each sample**, V.A.Q.A produces it automatically:
 
-- Genoma montado (`.fasta`)  
-- Relatórios do **QUAST** (`.tsv`,`.html`, `.txt`)  
-- Tabela resumo com as principais métricas de todas as amostras  
-- Gráficos agregados:
-  - Distribuição do **N50** e **L50**
-  - Tamanho total dos genomas
-  - Conteúdo GC por amostra
-  - Número de contigs por genoma
+- Assembled genome (`.fasta`)  
+- Reports from **QUAST** (`.tsv`,`.html`, `.txt`)  
+- Summary table with the main metrics of all the samples  
+- Aggregate charts:
+  - Distribution of **N50** and **L50**
+  - Total genome size
+  - GC content per sample
+  - Number of contigs per genome
     
 ---
 
-## 🛠️ Argumentos
+## 🛠️ Arguments
 
-- `-i` ou `--input`: caminho para o diretório com os arquivos FASTQ  
-- `-o` ou `--output`: diretório onde os resultados serão salvos
+- `-i` or `--input`: path to the directory with the FASTQ files
+- `-o` or `--output`: directory where the results will be saved
 
 ---
 
-## 🧪 Requisitos
+## 🧪 Requirements
 
 - Python ≥ 3.7  
 - [Unicycler](https://github.com/rrwick/Unicycler)  
 - [QUAST](https://github.com/ablab/quast)  
 
-### Bibliotecas Python:
+### Python libraries:
 - pandas  
 - matplotlib  
 - seaborn  
 
 ---
 
-## 📦 Instalação e Uso
+## 📦 Installation and use
 
-Clone o repositório e instale os requisitos:
+Clone the repository and install the requirements:
 
 ```bash
 git clone https://github.com/HenriqueDaSilvaVieira/VAQA.git
