@@ -54,9 +54,38 @@ Para **cada amostra**, o V.A.Q.A produz automaticamente:
   - Distribuição do **N50** e **L50**
   - Tamanho total dos genomas
   - Conteúdo GC por amostra
-  - Número de contigs por genoma  
+  - Número de contigs por genoma
+    
+---
+
+## 🛠️ Argumentos
+
+- `-i` ou `--input`: caminho para o diretório com os arquivos FASTQ  
+- `-o` ou `--output`: diretório onde os resultados serão salvos
 
 ---
+
+## 🧪 Requisitos
+
+- Python ≥ 3.7  
+- [Unicycler](https://github.com/rrwick/Unicycler)  
+- [QUAST](https://github.com/ablab/quast)  
+
+### Bibliotecas Python:
+- pandas  
+- matplotlib  
+- seaborn  
+
+---
+
+## 📦 Instalação
+
+Clone o repositório e instale os requisitos:
+
+```bash
+git clone https://github.com/HenriqueDaSilvaVieira/VAQA.git
+cd VAQA
+pip install -r requirements.txt
 
 ## ⚙️ Exemplo de uso
 
@@ -65,51 +94,4 @@ Execute o pipeline com:
 ```bash
 python3 vaqa.py -i ./caminho_para_arquivos_fastq -o ./resultados
 
-## Argumentos:
-
-`-i` ou `--input`: caminho para o diretório com os arquivos FASTQ
-
-`-o` ou `--output`: diretório onde os resultados serão salvos
-
-
-
----
-
-## 🧪 Requisitos
-
-Python ≥ 3.7
-
-Unicycler
-
-QUAST
-
-Bibliotecas Python:
-
-pandas
-
-matplotlib
-
-seaborn
-
-
-
-
----
-
-## 📦 Instalação
-
-Clone o repositório e instale os requisitos:
-
-git clone https://github.com/HenriqueDaSilvaVieira/VAQA.git
-cd VAQA
-pip install -r requirements.txt
-
-Certifique-se de que Unicycler e o Quast.py estejam disponíveis no seu $PATH.
-
-
----
-
-## 🧠 Créditos
-
-Desenvolvido como parte de um projeto de automação em genômica bacteriana, com foco em aplicações no contexto veterinário.
 
