@@ -1,3 +1,9 @@
+<p align="right">
+  <img src="https://github.com/user-attachments/assets/a3b067ad-732b-42cb-9331-c6f74ec7c061">
+</p>
+
+
+
 # V.A.Q.A: Visualization, Assembly, Quality, Automated
 
 **V.A.Q.A** is a fully automated pipeline designed to simplify the process of genomic assembly and quality assessment from paired FASTQ files - with just **one command line**.
