@@ -18,14 +18,14 @@ Inicialmente pensado para apoiar investigações genômicas de **patógenos em s
 ## 🚀 Funcionalidades
 
 - 🔁 Processamento automatizado de múltiplas amostras com arquivos FASTQ pareados  
-- 🧪 Montagem de genomas com **Unicycler (SPAdes)**  
-- 📊 Avaliação da qualidade com **QUAST**  
-- 📈 Visualização gráfica das principais métricas:
+- Montagem de genomas com **Unicycler (SPAdes)**  
+- Avaliação da qualidade com **QUAST**  
+- Visualização gráfica das principais métricas:
   - Número de contigs
   - Tamanho total do genoma
   - N50 e L50
   - Conteúdo GC  
-- 📁 Organização automática dos resultados em pastas por amostra  
+- Organização automática dos resultados em pastas por amostra  
 
 ---
 
@@ -37,7 +37,7 @@ Um diretório contendo os arquivos de leitura pareados nos formatos `.fastq`, `.
 
 IDENTIFICADOR_R1.fastq IDENTIFICADOR_R2.fastq
 
-### ✅ Exemplo:
+### Exemplo:
 
 VSF3096_R1.fastq VSF3096_R2.fastq
 
@@ -47,10 +47,10 @@ VSF3099_R1.fastq VSF3099_R2.fastq
 
 Para **cada amostra**, o V.A.Q.A produz automaticamente:
 
-- ✅ Genoma montado (`.fasta`)  
-- 📄 Relatórios do **QUAST** (`.tsv`,`.html`, `.txt`)  
-- 📊 Tabela resumo com as principais métricas de todas as amostras  
-- 📉 Gráficos agregados:
+- Genoma montado (`.fasta`)  
+- Relatórios do **QUAST** (`.tsv`,`.html`, `.txt`)  
+- Tabela resumo com as principais métricas de todas as amostras  
+- Gráficos agregados:
   - Distribuição do **N50** e **L50**
   - Tamanho total dos genomas
   - Conteúdo GC por amostra
