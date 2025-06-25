@@ -78,7 +78,7 @@ Para **cada amostra**, o V.A.Q.A produz automaticamente:
 
 ---
 
-## 📦 Instalação
+## 📦 Instalação e Uso
 
 Clone o repositório e instale os requisitos:
 
@@ -86,10 +86,6 @@ Clone o repositório e instale os requisitos:
 git clone https://github.com/HenriqueDaSilvaVieira/VAQA.git
 cd VAQA
 pip install -r requirements.txt
-
-## ⚙️ Exemplo de uso
-
-Execute o pipeline com:
 
 ```bash
 python3 vaqa.py -i ./caminho_para_arquivos_fastq -o ./resultados
