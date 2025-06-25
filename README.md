@@ -65,17 +65,17 @@ Execute o pipeline com:
 ```bash
 python3 vaqa.py -i ./caminho_para_arquivos_fastq -o ./resultados
 
-Argumentos:
+## Argumentos:
 
--i ou --input: caminho para o diretório com os arquivos FASTQ
+`-i` ou `--input`: caminho para o diretório com os arquivos FASTQ
 
--o ou --output: diretório onde os resultados serão salvos
+`-o` ou `--output`: diretório onde os resultados serão salvos
 
 
 
 ---
 
-🧪 Requisitos
+## 🧪 Requisitos
 
 Python ≥ 3.7
 
@@ -96,7 +96,7 @@ seaborn
 
 ---
 
-📦 Instalação
+## 📦 Instalação
 
 Clone o repositório e instale os requisitos:
 
@@ -109,7 +109,7 @@ Certifique-se de que Unicycler e o Quast.py estejam disponíveis no seu $PATH.
 
 ---
 
-🧠 Créditos
+## 🧠 Créditos
 
 Desenvolvido como parte de um projeto de automação em genômica bacteriana, com foco em aplicações no contexto veterinário.
 
